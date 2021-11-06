@@ -1,51 +1,42 @@
-
-class sensori {
-  constructor(name, parametri) {
-    this.name = name
-    this.parametri = parametri
-  }
-}
-
 class Date {
 
-  constructor(name,category,area,instructions,thumbnail) {
-    this.name = name
-    this.category = category
-    this.area = area
-    this.instructions = instructions
-    this.thumbnail = thumbnail
-
-    this.category = []
-    this.tags = []
+  constructor(description, id, lat, place, readonly, state, value) {
+    this.description = description
+    this.id = id
+    this.lat = lat
+    this.place = place
+    this.readonly = readonly
+    this.state = state
+    this.value = value
   }
-
-  AddTag(tag) {
-    this.tags.push(tag)
-  }
-
-  AddSensori(sensori) {
-    this.sensori.push(sensori)
-  }
-}
 
 function JSONToData(jsonObject) {
-  const {strMeal: name, 
-    strCategory: category,
-    strArea: area,
-    strInstructions: instructions,
-    strThumbnail: thumbnail,
-    strTags
+  this.description = description
+    this.id = id
+    this.lat = lat
+    this.place = place
+    this.readonly = readonly
+    this.state = state
+    this.value = value
+    
+  const {strDescription: description, 
+    strId: id,
+    strLat: lat,
+    strPlace: place,
+    strReadonly: readonly,
+    strState = state,
+    strValue = value
   } = jsonObject // destructuring
 
-  const data = new Datw(name, category, area, instructions, thumbnail)
+  const data = new Date(description,id,lat,place,readonly,state,value)
 
   if (strTags) {
-    const tags = strTags.split(",")
+    const tags = strTags.split(;)
     for(const tag of tags){
-      meal.AddTag(tag)
+      date.AddTag(tag)
     }
   }
-
+  
   console.log(date)
   return date
 }
