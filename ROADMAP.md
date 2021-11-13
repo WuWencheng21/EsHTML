@@ -1,7 +1,7 @@
 # ROADMAP
 
   - [ ] Accedere al web service leggendo i dati
-  - [ ] visualizzazione semplice ( in console) dei dati ricevuti
+  - [ ] visualizzazione semplice (in console) dei dati ricevuti
   - [ ] visualizzazione nella pagina HTML dei dati
   - [ ] modifica dei dati per i sensori che lo consentono
   - [ ] per i sensori con dati continui (readonly = true) aggiornamento dei dati
