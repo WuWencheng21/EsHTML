@@ -10,24 +10,68 @@
 
 	<!-- UIkit JS -->
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js">
-
 	</script>
+
 	<script src="https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit-icons.min.js">
-
 	</script>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
 	<link href="style.css" rel="stylesheet" type="text/css" />
+
+  <title>Title</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/uikit.min.css" />
+        <script src="js/uikit.min.js"></script>
+        <script src="js/uikit-icons.min.js"></script>
 </head>
 
 <body>
+
+  <table class="uk-table">
+    <caption></caption>
+    <thead>
+        <tr>
+            <th></th>
+        </tr>
+    </thead>
+    <tfoot>
+        <tr>
+            <td></td>
+        </tr>
+    </tfoot>
+    <tbody>
+        <tr>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<div>
+  <canvas id="myChart"></canvas>
+</div>
 	<div class="uk-container uk-container-large">
 		<div>
       <pre id="debug"></pre>
-      <pre id="value"></pre>
+      <!--><pre id="value"></pre></-->
+      Storico
+      <pre id="Storico"></pre>
+      <pre id="typeSensor1"></pre>
+      <pre id="typeSensor2"></pre>
+      <pre id="typeSensor3"></pre>
+      <pre id="typeSensor4"></pre>
     </div>
     <p>Premi il bottone per aggiornare</p>
-        <button id="btnAggiorna" class="uk-button uk-button-default uk-button-danger">Aggiorna</button>
+        <button id="btnAggiorna" class="uk-button uk-button-default uk-button-danger">Aggiorna</button><br><br><br>
+    <p>Premi il bottone per modificare un sensore</p>
+    <label class="form-label" for="input-example-1">Inserisci ID del sensore</label></b>
+    <p class="id">ID: <input type="text" id="ID"> </p>
+        <button id="btnModifica" onclick="Modifica()" class="uk-button uk-button-default uk-button-danger">Modifica</button>
 	</div>
 	<script src="script.js"></script>
+
+<canvas id="myChart" width="400" height="400"></canvas>
+
 </body>
 
 </html>
