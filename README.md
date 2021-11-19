@@ -11,3 +11,14 @@ Da presentare:
 * descrizione del progetto + user story (usando il "project" del repo) + link a librerie utilizzate (nel README.md)
 
 buon lavoro
+
+
+librerie
+https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit.min.js
+
+https://cdn.jsdelivr.net/npm/uikit@3.7.6/dist/js/uikit-icons.min.js
+
+https://cdn.jsdelivr.net/npm/chart.js
+
+
+
